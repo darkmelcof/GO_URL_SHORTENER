@@ -12,7 +12,7 @@ Go API created following the excellent tutorial of https://www.eddywm.com/
 
 
 ## ⚠️ Requirement
-- Redis server installed 
+- Redis Server installed 
 - Go installed
 
 ## 🏁 Getting Started
@@ -24,13 +24,13 @@ Start the Redis server:
 sudo service redis-server start
 ```
 
-Start the GO REST API:
+Start the Go REST API:
 ```sh
 go run ./main.go
 ```
 
 Send POST request with a REST Client (VSCode for example)
-```sh
+```http
 POST http://localhost:9808/create-short-url HTTP/1.1
 content-type: application/json
 
@@ -41,7 +41,7 @@ content-type: application/json
 ```
 
 You should reveive the following JSON Response
-```sh
+```json
 {
   "message": "short url created successfully",
   "short_url": "http://localhost:9808/coGaf4Vu"
@@ -49,9 +49,9 @@ You should reveive the following JSON Response
 ```
 
 ## 💡 Size of short url
-Go to shorturl_generator.go, change the number in the following code:
+Open the file shorturl_generator.go and change the number in the return code:
 
-```sh
+```go
 finalString[:8]
 ```
 
