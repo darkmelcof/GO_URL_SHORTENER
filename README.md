@@ -1,2 +1,2 @@
-# GO_URL_SHORTENER
-GO URL SHORTENER
+# GO - URL_SHORTENER
+Go API created following the good tutorial of https://www.eddywm.com/
